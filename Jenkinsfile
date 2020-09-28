@@ -9,8 +9,8 @@ pipeline {
   stages {
     stage('Pre Check') {
       steps {
-        sh "test -f ~/.docker/config.json"
-        sh "cat ~/.docker/config.json | grep docker.io"
+        sh "test -f ./home/.docker/config.json"
+        sh "cat ./home/.docker/config.json | grep docker.io"
       }
     }
     stage('Build') {
