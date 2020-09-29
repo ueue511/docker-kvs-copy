@@ -9,13 +9,8 @@ pipeline {
   stages {
     stage('Pre Check') {
       steps {
-<<<<<<< HEAD
         sh "test -f ~/home/ueue/.docker/config.json"
         sh "cat ~/home/ueue/.docker/config.json | grep docker.io"
-=======
-        sh "test -f ./home/.docker/config.json"
-        sh "cat ./home/.docker/config.json | grep docker.io"
->>>>>>> 5f25aab863ae1a927047359cb27760e4524a9ec4
       }
     }
     stage('Build') {
